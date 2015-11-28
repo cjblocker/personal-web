@@ -47,7 +47,7 @@ function bundle() {
     .bundle()
     .on('error', notify)
     .pipe(source('main.js'))
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./public/'))
 }
 bundler.on('update', bundle)
 
@@ -56,7 +56,7 @@ gulp.task('build', function() {
 });
 
 gulp.task('serve', function(done) {
-  gulp.src('')
+  gulp.src('public')
     .pipe(server({
       livereload: {
         enable: true,
