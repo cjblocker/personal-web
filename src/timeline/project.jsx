@@ -5,13 +5,16 @@ module.exports = React.createClass({
   getInitialState: function () {
 	return {opaque: false};
   },
-  handleMouseOver: function() {
+  handleMouseEnter: function() {
   	this.setState({opaque: true});
-  	this.props.onMouseOver();
+  	this.props.onMouseEnter();
   },
   handleMouseOut: function() {
   	this.setState({opaque: false});
   	this.props.onMouseOut();
+  },
+  handleClick: function() {
+    this.props.onClick();
   },
   render: function() {
   	var dim = 150;
@@ -33,8 +36,23 @@ module.exports = React.createClass({
   		borderRadius: dim/2,
   		opacity: this.state.opaque?1:.7
   	};
+    var flipStyle = {
+      MozTransform: "scaleX(-1)",
+      OTransform: "scaleX(-1)",
+      WebkitTransform: "scaleX(-1)",
+      Transform: "scaleX(-1)",
+      Filter: "FlipH",
+      msFilter: "FlipH"
+    }
+    if (this.props.flip == true) {
+      for (var attrname in flipStyle) { borderStyle[attrname] = flipStyle[attrname]; }
+    };
     return <div style={borderStyle}>
-        <div style={imgStyle} onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}></div>
+        <div style={imgStyle} 
+              onMouseEnter={this.handleMouseEnter} 
+              onMouseOut={this.handleMouseOut} 
+              onClick={this.handleClick}>
+        </div>
     </div>
   }
 });
