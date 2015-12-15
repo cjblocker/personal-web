@@ -1,6 +1,8 @@
 var React = require('react');
 var ProjectTag = require('./projecttag');
 
+var projectList = require('./projs.jsx');
+
 var pixPerDay = .5;
 var today = new Date();
 
@@ -64,16 +66,20 @@ module.exports = React.createClass({
   		backgroundColor: '#000000',
   		position: 'relative'
   	}
+    
+    var left = projectList.filter(function(proj){return !proj.right && proj.tags[0] != "school"}).map(function(proj){
+      return <ProjectTag key={proj.ID} pos={Date.daysSince(new Date(proj.date))*pixPerDay} flip={false} imageUrl={proj.thumbnail} desc={proj.description} title={proj.title} link={proj.url}/>
+    })
+    var right = projectList.filter(function(proj){return proj.right && proj.tags[0] != "school"}).map(function(proj){
+      return <ProjectTag key={proj.ID} pos={Date.daysSince(new Date(proj.date))*pixPerDay} flip={true} imageUrl={proj.thumbnail} desc={proj.description} title={proj.title} link={proj.url}/>
+    })
     return <div style={containerDiv}>
     	<div style={tagsDiv}>
-      		<ProjectTag pos={0} flip={false} imageUrl='http://3.bp.blogspot.com/-2dOnVkjwolI/VZ6T8ND5F1I/AAAAAAAAAHk/TZacJKM-e78/s400/2015-04-10%2B19.56.08.jpg' />
-      		<ProjectTag pos={Date.daysSince(grad)*pixPerDay} flip={false} imageUrl='http://3.bp.blogspot.com/-2dOnVkjwolI/VZ6T8ND5F1I/AAAAAAAAAHk/TZacJKM-e78/s400/2015-04-10%2B19.56.08.jpg' />
-      		<ProjectTag pos={Date.daysSince(birth)*pixPerDay} flip={false} imageUrl='http://3.bp.blogspot.com/-2dOnVkjwolI/VZ6T8ND5F1I/AAAAAAAAAHk/TZacJKM-e78/s400/2015-04-10%2B19.56.08.jpg' />
+      		{left}
     	</div>
     	<div style={timelineDiv}>{this.renderYears()}</div>
     	<div style={tagsDiv}>
-      		<ProjectTag pos={Date.daysSince(college)*pixPerDay} flip={true} imageUrl='http://3.bp.blogspot.com/-2dOnVkjwolI/VZ6T8ND5F1I/AAAAAAAAAHk/TZacJKM-e78/s400/2015-04-10%2B19.56.08.jpg' />
-      		<ProjectTag pos={Date.daysSince(baptized)*pixPerDay} flip={true} imageUrl='http://3.bp.blogspot.com/-2dOnVkjwolI/VZ6T8ND5F1I/AAAAAAAAAHk/TZacJKM-e78/s400/2015-04-10%2B19.56.08.jpg' />
+      		{right}
     	</div>
     </div>
   }

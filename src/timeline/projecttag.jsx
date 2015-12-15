@@ -37,7 +37,7 @@ module.exports = React.createClass({
   	};
 
     return <div style={{position:'absolute', top: this.props.pos + 25 - (165/2), width:300, height:165}}>
-        <Info flip={this.props.flip} title="Project" desc="here is an example description" link='about' visible={this.state.infobox} />
+        <Info flip={this.props.flip} title={this.props.title} desc={this.props.desc} link={this.props.url} visible={this.state.infobox} />
         <div style={majorDiv}>
   	      <Project flip={this.props.flip} 
                   onMouseEnter={this.handleMouseEnter} 

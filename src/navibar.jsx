@@ -14,7 +14,7 @@ module.exports = React.createClass({
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand" href="#">Cameron Blocker</a>
+          <Link className="navbar-brand" to="">Cameron Blocker [beta]</Link>
         </div>
 
 
@@ -25,7 +25,7 @@ module.exports = React.createClass({
           
           
           <ul className="nav navbar-nav navbar-right">
-            <li><Link activeClassName='active' to="about">About Me</Link></li>
+            <li><Link activeClassName='active' to="">About Me</Link></li>
             <li><Link activeClassName='active' to="projects">My Projects</Link></li>
             <li><Link activeClassName='active' to="resume">My Resume</Link></li>
             <li><Link activeClassName='active' to="contact">Contact Me</Link></li>
