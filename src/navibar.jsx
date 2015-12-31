@@ -4,6 +4,21 @@ var Link = ReactRouter.Link;
 
 module.exports = React.createClass({
   render: function() {
+    logo = {
+      fontFamily: "'Roboto Slab', serif",
+      fontWeight: 700,
+      textAlign: 'center',
+      color: '#777',
+      borderRadius: 5,
+      height: 30,
+      padding: 5,
+      marginLeft: 100,
+      float: 'left',
+      height: '50px',
+      padding: '15px 15px',
+      fontSize: '18px',
+      lineHeight: '20px'
+    }
     return <nav className="navbar navbar-default navbar-fixed-top">
         <div className="container-fluid">
 
@@ -14,7 +29,11 @@ module.exports = React.createClass({
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <Link className="navbar-brand" to="">Cameron Blocker [beta]</Link>
+          <Link className="" to="">
+            <div style={logo}>
+              Cameron Blocker [beta]
+            </div>
+          </Link>
         </div>
 
 
