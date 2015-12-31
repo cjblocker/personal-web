@@ -5,8 +5,6 @@ module.exports = React.createClass({
   render: function() {
     bannerImg = {
         background: "linear-gradient( rgba(255,255,255,0), rgba(255,255,255,255)), url('/img/desk.jpg')",
-
-        // backgroundImage: 'url(/img/cleanroom.jpg)',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -27,6 +25,13 @@ module.exports = React.createClass({
          <div style={bannerImg}>
             <div style={title}>
                 Cameron Blocker
+                <div>
+                    <a href="mailto:cameronjblocker@gmail.com"><img className="large-icon" src="img/icons/mail3.png" /></a>
+                    <a href="https://www.facebook.com/cameron.blocker"><img className="large-icon" src="img/icons/facebook.png" /></a>
+                    <a href="https://twitter.com/cameronjblocker"><img className="large-icon" src="img/icons/twitter.png" /></a>
+                    <a href="https://www.linkedin.com/in/cameronjblocker"><img className="large-icon" src="img/icons/linkedin.png" /></a>
+                    <a href="https://github.com/ekisu"><img className="large-icon" src="img/icons/github.png" /></a>
+                </div>
            </div>
          </div>
         <div style={{margin:'auto', width: 600, minHeight: 400}}>
