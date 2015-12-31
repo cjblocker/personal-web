@@ -30,7 +30,7 @@ module.exports = React.createClass({
            </div>
          </div>
         <div style={{margin:'auto', width: 600, minHeight: 400}}>
-    	<h1> About Me: </h1>
+    	<h1 id="about"> About Me: </h1>
     	<h3> <em>[Under Construction]</em> </h3>
     	<div style={{paddingLeft: 50}}>
     		<p> <img src="img/cameron_blocker.png" style={{float:'left', width: 150, height: 'auto', marginRight: 10, borderRadius: 10}} />

@@ -17,7 +17,8 @@ module.exports = React.createClass({
       height: '50px',
       padding: '15px 15px',
       fontSize: '18px',
-      lineHeight: '20px'
+      lineHeight: '20px',
+      position: 'relative'
     }
     return <nav className="navbar navbar-default navbar-fixed-top">
         <div className="container-fluid">
@@ -31,7 +32,8 @@ module.exports = React.createClass({
           </button>
           <Link className="" to="">
             <div style={logo}>
-              Cameron Blocker [beta]
+              <img src='img/logo.png' style={{width:30,height:30,position:'absolute', top: '11px', left: '-20px', opacity: ".5"}} />
+              Cameron Blocker
             </div>
           </Link>
         </div>
@@ -40,8 +42,8 @@ module.exports = React.createClass({
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           
           <ul className="nav navbar-nav">
+
           </ul>
-          
           
           <ul className="nav navbar-nav navbar-right">
             <li><Link activeClassName='active' to="">About Me</Link></li>
