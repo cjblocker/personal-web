@@ -2,8 +2,22 @@ var React = require('react');
 
 module.exports = React.createClass({
   render: function() {
-    return <div style={{margin:'auto', width: 600, minHeight: 400}}>
-    	<h1> Contact Me: </h1>
+    bannerImg = {
+        backgroundImage: 'url(/img/clutter.jpg)',
+        backgroundPosition: '50% 50%',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        minHeight: 300
+    }
+    return <div>
+        <div style={bannerImg}>
+            <div className="title_rect">
+                <div style={{backgroundColor: 'rgba(255,255,255, 10)', margin: '0 auto', width:400, borderRadius: 20, opacity:.7}}>
+                    Contact Me
+                </div>
+           </div>
+         </div>
+    <div style={{margin:'auto', width: 600, minHeight: 400}}>
     	<div style={{paddingLeft: 50}}>
     	<h3> Cameron Blocker </h3>
     	<p>
@@ -16,6 +30,7 @@ module.exports = React.createClass({
 
     	</p>
     	</div>
+    </div>
     </div>
   }
 });

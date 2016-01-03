@@ -3,7 +3,7 @@ var ProjectTag = require('./projecttag');
 
 var projectList = require('./projs.jsx');
 
-var pixPerDay = .5;
+var pixPerDay = .7;
 var today = new Date();
 
 Date.daysSince = function( date0 ) {
@@ -67,11 +67,11 @@ module.exports = React.createClass({
   		position: 'relative'
   	}
     
-    var left = projectList.filter(function(proj){return !proj.right && proj.tags[0] != "school"}).map(function(proj){
-      return <ProjectTag key={proj.ID} pos={Date.daysSince(new Date(proj.date))*pixPerDay} flip={false} imageUrl={proj.thumbnail} desc={proj.description} title={proj.title} link={proj.url}/>
+    var left = projectList.filter(function(proj){return !proj.right && proj.tags[0] != "schoolk"}).map(function(proj){
+      return <ProjectTag key={proj.ID} pos={Date.daysSince(new Date(proj.date))*pixPerDay} flip={false} imageUrl={proj.thumbnail} desc={proj.description} title={proj.title} link={proj.url} xshift={proj.xshift} />
     })
-    var right = projectList.filter(function(proj){return proj.right && proj.tags[0] != "school"}).map(function(proj){
-      return <ProjectTag key={proj.ID} pos={Date.daysSince(new Date(proj.date))*pixPerDay} flip={true} imageUrl={proj.thumbnail} desc={proj.description} title={proj.title} link={proj.url}/>
+    var right = projectList.filter(function(proj){return proj.right && proj.tags[0] != "schoolk"}).map(function(proj){
+      return <ProjectTag key={proj.ID} pos={Date.daysSince(new Date(proj.date))*pixPerDay} flip={true} imageUrl={proj.thumbnail} desc={proj.description} title={proj.title} link={proj.url} xshift={proj.xshift} />
     })
     return <div style={containerDiv}>
     	<div style={tagsDiv}>

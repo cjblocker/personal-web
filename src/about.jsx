@@ -36,7 +36,6 @@ module.exports = React.createClass({
          </div>
         <div style={{margin:'auto', width: 600, minHeight: 400}}>
     	<h1 id="about"> About Me: </h1>
-    	<h3> <em>[Under Construction]</em> </h3>
     	<div style={{paddingLeft: 50}}>
     		<p> <img src="img/cameron_blocker.png" style={{float:'left', width: 150, height: 'auto', marginRight: 10, borderRadius: 10}} />
     			My name is Cameron Blocker and I am an Electrical Engineering
@@ -48,8 +47,15 @@ module.exports = React.createClass({
     			capable of recreating all the depth cues characteristic of real 
     			objects. 
     		</p>
+            <p>
+                In the near future, I hope to attend graduate school and pursue a PhD. 
+                I have loved engineering since I was young. I got into programming in 3rd
+                grade but I wanted to create things that had life outside of the box of my 
+                computer monitor. I got into electrical engineering, and was buying college
+                text books in engineering before I'd even completed high school.
+            </p>
     		<p>
-    			I am an <a href="http://www.16personalities.com/intp-personality"> INTP</a>, a hardware hacker, and a mormon.
+    			I am an <a href="http://www.16personalities.com/intp-personality"> INTP</a>, a hardware hacker, and a Mormon.
     		</p>
     	</div>
     </div>

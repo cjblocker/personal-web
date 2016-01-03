@@ -19,3 +19,33 @@
 .small-icon:hover {
 	opacity: .9;
 }
+
+.project_heading {
+	font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.project_tag {
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	height:10px;
+	padding: 2px;
+	font-weight: 700;
+}
+
+.title_rect {    
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 5em;
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+    min-height: 300px;
+    padding: 100px 0
+}
+
+hr {
+	margin: 0;
+}

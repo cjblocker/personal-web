@@ -20,7 +20,8 @@ module.exports = React.createClass({
 		color: 'white',
 		position: 'absolute',
 		left: this.props.flip?306:-256,
-		visibility: this.props.visible?'visible':'hidden'
+		visibility: this.props.visible?'visible':'hidden',
+		zIndex: 10
 	};
     return <div style={divStyle}>
 		<h3> {this.props.title} </h3>
