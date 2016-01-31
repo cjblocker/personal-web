@@ -1,4 +1,5 @@
 var React = require('react');
+var TwitterFeed = require('./twitter');
 
 module.exports = React.createClass({
   render: function() {
@@ -30,6 +31,7 @@ module.exports = React.createClass({
 
     	</p>
     	</div>
+        <TwitterFeed />
     </div>
     </div>
   }

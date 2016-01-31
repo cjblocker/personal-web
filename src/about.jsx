@@ -1,5 +1,6 @@
 var React = require('react');
 var InfoBox = require('./timeline/info');
+var TwitterFeed = require('./twitter');
 
 module.exports = React.createClass({
   render: function() {

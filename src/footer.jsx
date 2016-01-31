@@ -3,10 +3,15 @@ var React = require('react');
 module.exports = React.createClass({
   render: function() {
     var divStyle = {
+      background: 'url(/img/sinc.png)',
+      backgroundPosition: 'center',
+      backgroundSize: '100% 100px',
       width:'100%',
+      height: '100px',
       padding: 'auto',
       textAlign: 'center',
-      padding: "5 0"
+      padding: "40 0 20 0",
+      margin: "10 0 5 0"
     };
     return <div style={divStyle}>
       <span>&#169; Cameron Blocker 2015</span>
