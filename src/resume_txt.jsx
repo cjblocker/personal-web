@@ -1,6 +1,9 @@
 module.exports = {
 	Education:[                                                                                                                                                             
-		"BS Electrical Engineering, Computer Science Minor, Brigham Young University, June 2016",[
+		"PhD Electrical Engineering, University of Michigan, May 2021",[
+			"Studying Plenoptic Imaging"
+		],
+		"BS Electrical Engineering, Computer Science Minor, Brigham Young University, August 2016",[
 			"3.99 GPA",
 			"Recipient of Tau Beta Pi Scribner Scholarship for 2015-16",
 			"ACT score of 33 (Perfect 36’s in Math and Science)",
@@ -8,13 +11,13 @@ module.exports = {
 		]
 	],
 	Experience:[                                                                                                                                                             
+		"Research Assistant, BYU Electro-Holography Lab 		        Sept 2014 – Aug 2016",[
+			"Researching methods for improved hologram display resolution by redesigning scan control circuitry, 3D printed parts and firmware",
+			"Implementing hologram algorithms on GPUs for real-time 3D video rendering"
+		],
 		"DDG Technical Intern, Intel, Device Development Group 	    May 2015 – Aug 2015",[
 			"Developed Python library to assist post-silicon debug of SoC clocks",
 			"Designed experimental RTL clock hardware for SoCs in SystemVerilog"
-		],
-		"Research Assistant, BYU Electro-Holography Lab 		        Sept 2014 – Present",[
-			"Researching methods for improved hologram display resolution by redesigning scan control circuitry, 3D printed parts and firmware",
-			"Implementing hologram algorithms on GPUs for real-time 3D video rendering"
 		],
 		"Research Assistant, BYU Computer Architecture Lab	                 April 2014 – Aug 2014",[
 			"Wrote distribution and install scripts in Python for software release",
@@ -43,7 +46,8 @@ module.exports = {
 		"Self-taught in 3D printing and CAD modeling",
 		"Fluent in the spoken and written Cambodian Language"
 	],
-	Extracurricular:[                                                                                                                                                    
+	Extracurricular:[    
+		"1st place in 2016 hackCU Major League Hackathon",                                                                                                                                                
 		"Cjblocker.blogspot.com: Blog of my electronic projects since middle school",
 		"Chair of BYU IEEE student branch",
 		"Secretary in Eta Kappa Nu Honor Society",

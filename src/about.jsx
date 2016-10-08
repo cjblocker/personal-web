@@ -39,25 +39,25 @@ module.exports = React.createClass({
     	<h1 id="about"> About Me: </h1>
     	<div style={{paddingLeft: 50}}>
     		<p> <img src="img/cameron_blocker.png" style={{float:'left', width: 150, height: 'auto', marginRight: 10, borderRadius: 10}} />
-    			My name is Cameron Blocker and I am an Electrical Engineering
-    			undergraduate student studying at <a href="https://www.byu.edu">Brigham Young University</a>. My
-    			interests include computational displays and imaging, robotic
-    			vision, human-computer interaction, and embedded systems. I 
-    			currently work as a research assistant in BYU's <a href="https://holography.byu.edu">Electroholography
-    			Lab</a> where I design circuits and software for a 3D holographic display 
-    			capable of recreating all the depth cues characteristic of real 
-    			objects. 
-    		</p>
-            <p>
-                In the near future, I hope to attend graduate school and pursue a PhD. 
-                I have loved engineering since I was young. I got into programming in 3rd
-                grade but I wanted to create things that had life outside of the box of my 
-                computer monitor. I got into electrical engineering, and was buying college
-                text books in engineering before I'd even completed high school.
+                My name is Cameron Blocker and I am a 1st year PhD student at <a href="http://www.umich.edu/">the 
+                University of Michigan</a> studying <a href="https://en.wikipedia.org/wiki/Light-field_camera">
+                Plenoptic imaging</a> for a <a href="http://ns.umich.edu/new/releases/23576-a-better-3d-camera-with-clear-graphene-light-detectors">
+                focal-stack light-field camera</a>. My interests include computational displays and imaging, 
+                computer vision, human-computer interaction, and embedded systems.
             </p>
-    		<p>
-    			I am an <a href="http://www.16personalities.com/intp-personality"> INTP</a>, a hardware hacker, and a Mormon.
-    		</p>
+            <p>
+                I graduated Magna Cum Laude from <a href="https://www.byu.edu">Brigham Young University</a> 
+                with my Bachelor's degree in Electrical Engineering (with minors in Computer Science and 
+                    Mathmatics) in August of 2016. I have loved engineering since I was young. I got into 
+                    programming in 3rd grade but I wanted to create things that had life outside of the box 
+                    of my computer monitor. I got into electrical engineering, and was buying college text books 
+                    in engineering before I'd even completed high school.
+            </p>
+            <p>
+                I am an <a href="http://www.16personalities.com/intp-personality"> INTP</a>, 
+                a <a href="https://hackaday.io/ekisu">hardware hacker</a>, and 
+                a <a href="https://www.mormon.org/">Mormon</a>.
+            </p>
     	</div>
     </div>
     </div>
