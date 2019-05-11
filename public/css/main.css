@@ -1,0 +1,11 @@
+
+.small-icon {
+	width: 20px;
+	height: auto;
+	opacity: .4;
+	margin: 0 5px;
+}
+
+.small-icon:hover {
+	opacity: .9;
+}
